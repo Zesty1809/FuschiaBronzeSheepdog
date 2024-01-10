@@ -1,0 +1,4 @@
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/fbs_c.dir
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/fbs_cpp.dir
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/edit_cache.dir
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/fbs_c.dir/src/c/main.c.o -o fbs_c 
