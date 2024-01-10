@@ -187,29 +187,29 @@ uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-src/c/fahr.o: src/c/fahr.c.o
-.PHONY : src/c/fahr.o
+src/c/blanks_counter.o: src/c/blanks_counter.c.o
+.PHONY : src/c/blanks_counter.o
 
 # target to build an object file
-src/c/fahr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/fahr.c.o
-.PHONY : src/c/fahr.c.o
+src/c/blanks_counter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/blanks_counter.c.o
+.PHONY : src/c/blanks_counter.c.o
 
-src/c/fahr.i: src/c/fahr.c.i
-.PHONY : src/c/fahr.i
+src/c/blanks_counter.i: src/c/blanks_counter.c.i
+.PHONY : src/c/blanks_counter.i
 
 # target to preprocess a source file
-src/c/fahr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/fahr.c.i
-.PHONY : src/c/fahr.c.i
+src/c/blanks_counter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/blanks_counter.c.i
+.PHONY : src/c/blanks_counter.c.i
 
-src/c/fahr.s: src/c/fahr.c.s
-.PHONY : src/c/fahr.s
+src/c/blanks_counter.s: src/c/blanks_counter.c.s
+.PHONY : src/c/blanks_counter.s
 
 # target to generate assembly for a file
-src/c/fahr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/fahr.c.s
-.PHONY : src/c/fahr.c.s
+src/c/blanks_counter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/blanks_counter.c.s
+.PHONY : src/c/blanks_counter.c.s
 
 # Help Target
 help:
@@ -225,9 +225,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... fbs"
-	@echo "... src/c/fahr.o"
-	@echo "... src/c/fahr.i"
-	@echo "... src/c/fahr.s"
+	@echo "... src/c/blanks_counter.o"
+	@echo "... src/c/blanks_counter.i"
+	@echo "... src/c/blanks_counter.s"
 .PHONY : help
 
 

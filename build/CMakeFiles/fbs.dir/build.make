@@ -69,28 +69,28 @@ include CMakeFiles/fbs.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/fbs.dir/flags.make
 
-CMakeFiles/fbs.dir/src/c/fahr.c.o: CMakeFiles/fbs.dir/flags.make
-CMakeFiles/fbs.dir/src/c/fahr.c.o: ../src/c/fahr.c
-CMakeFiles/fbs.dir/src/c/fahr.c.o: CMakeFiles/fbs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fbs.dir/src/c/fahr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fbs.dir/src/c/fahr.c.o -MF CMakeFiles/fbs.dir/src/c/fahr.c.o.d -o CMakeFiles/fbs.dir/src/c/fahr.c.o -c /home/zesty/dev/FuschiaBronzeSheepdog/src/c/fahr.c
+CMakeFiles/fbs.dir/src/c/blanks_counter.c.o: CMakeFiles/fbs.dir/flags.make
+CMakeFiles/fbs.dir/src/c/blanks_counter.c.o: ../src/c/blanks_counter.c
+CMakeFiles/fbs.dir/src/c/blanks_counter.c.o: CMakeFiles/fbs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fbs.dir/src/c/blanks_counter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fbs.dir/src/c/blanks_counter.c.o -MF CMakeFiles/fbs.dir/src/c/blanks_counter.c.o.d -o CMakeFiles/fbs.dir/src/c/blanks_counter.c.o -c /home/zesty/dev/FuschiaBronzeSheepdog/src/c/blanks_counter.c
 
-CMakeFiles/fbs.dir/src/c/fahr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fbs.dir/src/c/fahr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zesty/dev/FuschiaBronzeSheepdog/src/c/fahr.c > CMakeFiles/fbs.dir/src/c/fahr.c.i
+CMakeFiles/fbs.dir/src/c/blanks_counter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fbs.dir/src/c/blanks_counter.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zesty/dev/FuschiaBronzeSheepdog/src/c/blanks_counter.c > CMakeFiles/fbs.dir/src/c/blanks_counter.c.i
 
-CMakeFiles/fbs.dir/src/c/fahr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fbs.dir/src/c/fahr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zesty/dev/FuschiaBronzeSheepdog/src/c/fahr.c -o CMakeFiles/fbs.dir/src/c/fahr.c.s
+CMakeFiles/fbs.dir/src/c/blanks_counter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fbs.dir/src/c/blanks_counter.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zesty/dev/FuschiaBronzeSheepdog/src/c/blanks_counter.c -o CMakeFiles/fbs.dir/src/c/blanks_counter.c.s
 
 # Object files for target fbs
 fbs_OBJECTS = \
-"CMakeFiles/fbs.dir/src/c/fahr.c.o"
+"CMakeFiles/fbs.dir/src/c/blanks_counter.c.o"
 
 # External object files for target fbs
 fbs_EXTERNAL_OBJECTS =
 
-fbs: CMakeFiles/fbs.dir/src/c/fahr.c.o
+fbs: CMakeFiles/fbs.dir/src/c/blanks_counter.c.o
 fbs: CMakeFiles/fbs.dir/build.make
 fbs: CMakeFiles/fbs.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable fbs"

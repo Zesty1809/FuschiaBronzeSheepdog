@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/zesty/dev/FuschiaBronzeSheepdog/src/c/fahr.c" "CMakeFiles/fbs.dir/src/c/fahr.c.o" "gcc" "CMakeFiles/fbs.dir/src/c/fahr.c.o.d"
+  "/home/zesty/dev/FuschiaBronzeSheepdog/src/c/blanks_counter.c" "CMakeFiles/fbs.dir/src/c/blanks_counter.c.o" "gcc" "CMakeFiles/fbs.dir/src/c/blanks_counter.c.o.d"
   )
 
 # Targets to which this target links.

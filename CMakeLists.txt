@@ -8,6 +8,9 @@ project(FuschiaBronzeSheepdog)
 file(GLOB_RECURSE C_SOURCES "src/c/*.c")
 add_executable(fbs ${C_SOURCES})
 
+# Add the second executable
+# add_executable(lc "src/c/line_counter.c")
+
 # Add your C++ source files here
 # file(GLOB_RECURSE CPP_SOURCES "src/cpp/*.cpp")
 # add_executable(fbs_cpp ${CPP_SOURCES})

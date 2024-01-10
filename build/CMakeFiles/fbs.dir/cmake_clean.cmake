@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/fbs.dir/src/c/fahr.c.o"
-  "CMakeFiles/fbs.dir/src/c/fahr.c.o.d"
+  "CMakeFiles/fbs.dir/src/c/blanks_counter.c.o"
+  "CMakeFiles/fbs.dir/src/c/blanks_counter.c.o.d"
   "fbs"
   "fbs.pdb"
 )
