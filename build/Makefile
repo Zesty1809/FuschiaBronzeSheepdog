@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles /home/zesty/dev/FuschiaBronzeSheepdog/build//CMakeFiles/progress.marks
@@ -117,78 +162,54 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named fbs_c
+# Target rules for targets named fbs
 
 # Build rule for target.
-fbs_c: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fbs_c
-.PHONY : fbs_c
+fbs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fbs
+.PHONY : fbs
 
 # fast build rule for target.
-fbs_c/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs_c.dir/build.make CMakeFiles/fbs_c.dir/build
-.PHONY : fbs_c/fast
+fbs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/build
+.PHONY : fbs/fast
 
 #=============================================================================
-# Target rules for targets named fbs_cpp
+# Target rules for targets named uninstall
 
 # Build rule for target.
-fbs_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fbs_cpp
-.PHONY : fbs_cpp
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
 
 # fast build rule for target.
-fbs_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs_cpp.dir/build.make CMakeFiles/fbs_cpp.dir/build
-.PHONY : fbs_cpp/fast
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
 
-src/c/main.o: src/c/main.c.o
-.PHONY : src/c/main.o
-
-# target to build an object file
-src/c/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs_c.dir/build.make CMakeFiles/fbs_c.dir/src/c/main.c.o
-.PHONY : src/c/main.c.o
-
-src/c/main.i: src/c/main.c.i
-.PHONY : src/c/main.i
-
-# target to preprocess a source file
-src/c/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs_c.dir/build.make CMakeFiles/fbs_c.dir/src/c/main.c.i
-.PHONY : src/c/main.c.i
-
-src/c/main.s: src/c/main.c.s
-.PHONY : src/c/main.s
-
-# target to generate assembly for a file
-src/c/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs_c.dir/build.make CMakeFiles/fbs_c.dir/src/c/main.c.s
-.PHONY : src/c/main.c.s
-
-src/cpp/main.o: src/cpp/main.cpp.o
-.PHONY : src/cpp/main.o
+src/c/fahr.o: src/c/fahr.c.o
+.PHONY : src/c/fahr.o
 
 # target to build an object file
-src/cpp/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs_cpp.dir/build.make CMakeFiles/fbs_cpp.dir/src/cpp/main.cpp.o
-.PHONY : src/cpp/main.cpp.o
+src/c/fahr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/fahr.c.o
+.PHONY : src/c/fahr.c.o
 
-src/cpp/main.i: src/cpp/main.cpp.i
-.PHONY : src/cpp/main.i
+src/c/fahr.i: src/c/fahr.c.i
+.PHONY : src/c/fahr.i
 
 # target to preprocess a source file
-src/cpp/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs_cpp.dir/build.make CMakeFiles/fbs_cpp.dir/src/cpp/main.cpp.i
-.PHONY : src/cpp/main.cpp.i
+src/c/fahr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/fahr.c.i
+.PHONY : src/c/fahr.c.i
 
-src/cpp/main.s: src/cpp/main.cpp.s
-.PHONY : src/cpp/main.s
+src/c/fahr.s: src/c/fahr.c.s
+.PHONY : src/c/fahr.s
 
 # target to generate assembly for a file
-src/cpp/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs_cpp.dir/build.make CMakeFiles/fbs_cpp.dir/src/cpp/main.cpp.s
-.PHONY : src/cpp/main.cpp.s
+src/c/fahr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/fahr.c.s
+.PHONY : src/c/fahr.c.s
 
 # Help Target
 help:
@@ -197,15 +218,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... fbs_c"
-	@echo "... fbs_cpp"
-	@echo "... src/c/main.o"
-	@echo "... src/c/main.i"
-	@echo "... src/c/main.s"
-	@echo "... src/cpp/main.o"
-	@echo "... src/cpp/main.i"
-	@echo "... src/cpp/main.s"
+	@echo "... uninstall"
+	@echo "... fbs"
+	@echo "... src/c/fahr.o"
+	@echo "... src/c/fahr.i"
+	@echo "... src/c/fahr.s"
 .PHONY : help
 
 

@@ -1,4 +1,8 @@
-/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/fbs_c.dir
-/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/fbs_cpp.dir
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/fbs.dir
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/uninstall.dir
 /home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/edit_cache.dir
 /home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/rebuild_cache.dir
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/list_install_components.dir
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/install.dir
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/install/local.dir
+/home/zesty/dev/FuschiaBronzeSheepdog/build/CMakeFiles/install/strip.dir
