@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/fbs.dir/src/c/blanks_counter.c.o -o fbs 
+/usr/bin/cc -g CMakeFiles/fbs.dir/src/c/data_type_range_calculator.c.o -o fbs 
