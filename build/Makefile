@@ -187,29 +187,29 @@ uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-src/c/data_type_range_calculator.o: src/c/data_type_range_calculator.c.o
-.PHONY : src/c/data_type_range_calculator.o
+src/c/main.o: src/c/main.c.o
+.PHONY : src/c/main.o
 
 # target to build an object file
-src/c/data_type_range_calculator.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/data_type_range_calculator.c.o
-.PHONY : src/c/data_type_range_calculator.c.o
+src/c/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/main.c.o
+.PHONY : src/c/main.c.o
 
-src/c/data_type_range_calculator.i: src/c/data_type_range_calculator.c.i
-.PHONY : src/c/data_type_range_calculator.i
+src/c/main.i: src/c/main.c.i
+.PHONY : src/c/main.i
 
 # target to preprocess a source file
-src/c/data_type_range_calculator.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/data_type_range_calculator.c.i
-.PHONY : src/c/data_type_range_calculator.c.i
+src/c/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/main.c.i
+.PHONY : src/c/main.c.i
 
-src/c/data_type_range_calculator.s: src/c/data_type_range_calculator.c.s
-.PHONY : src/c/data_type_range_calculator.s
+src/c/main.s: src/c/main.c.s
+.PHONY : src/c/main.s
 
 # target to generate assembly for a file
-src/c/data_type_range_calculator.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/data_type_range_calculator.c.s
-.PHONY : src/c/data_type_range_calculator.c.s
+src/c/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fbs.dir/build.make CMakeFiles/fbs.dir/src/c/main.c.s
+.PHONY : src/c/main.c.s
 
 # Help Target
 help:
@@ -225,9 +225,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... fbs"
-	@echo "... src/c/data_type_range_calculator.o"
-	@echo "... src/c/data_type_range_calculator.i"
-	@echo "... src/c/data_type_range_calculator.s"
+	@echo "... src/c/main.o"
+	@echo "... src/c/main.i"
+	@echo "... src/c/main.s"
 .PHONY : help
 
 

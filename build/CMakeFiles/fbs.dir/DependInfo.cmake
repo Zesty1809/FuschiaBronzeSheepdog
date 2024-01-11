@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/zesty/dev/FuschiaBronzeSheepdog/src/c/data_type_range_calculator.c" "CMakeFiles/fbs.dir/src/c/data_type_range_calculator.c.o" "gcc" "CMakeFiles/fbs.dir/src/c/data_type_range_calculator.c.o.d"
+  "/home/zesty/dev/FuschiaBronzeSheepdog/src/c/main.c" "CMakeFiles/fbs.dir/src/c/main.c.o" "gcc" "CMakeFiles/fbs.dir/src/c/main.c.o.d"
   )
 
 # Targets to which this target links.
